@@ -6,7 +6,7 @@ import TaskListPage from "../pages/Tasks/TaskListPage";
 // import TaskDetailsPage from "../pages/Tasks/TaskDetailsPage";
 // import EditTaskPage from "../pages/Tasks/EditTaskPage";
 import ProfilePage from "../pages/Profile/ProfilePage";
-// import EditProfilePage from "../pages/Profile/EditProfilePage";
+import EditProfilePage from "../pages/Profile/EditProfilePage";
 import ProtectedRoute from "./ProtectedRoute";
 import PublicRoute from "./PublicRoute";
 
@@ -28,7 +28,7 @@ export const routes = createBrowserRouter([
     children: [
       { index: true, element: <TaskListPage /> },
       { path: "profile", element: <ProfilePage /> },
-      // { path: "profile/edit", element: <EditProfilePage /> },
+      { path: "profile/edit", element: <EditProfilePage /> },
       // { path: "task/:id", element: <TaskDetailsPage /> },
       // { path: "task/:id/edit", element: <EditTaskPage /> },
     ],

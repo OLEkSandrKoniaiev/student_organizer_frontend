@@ -39,4 +39,8 @@ export const getCurrentUser = async (): Promise<IUserProfile> => {
   return response.data;
 };
 
+export const deleteUserPhoto = async (): Promise<void> => {
+  await api.delete("/users/photo");
+};
+
 export default api;
