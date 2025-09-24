@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout";
 import SignInPage from "../pages/Auth/SignInPage";
 import SignUpPage from "../pages/Auth/SignUpPage";
 import TaskListPage from "../pages/Tasks/TaskListPage";
-// import TaskDetailsPage from "../pages/Tasks/TaskDetailsPage";
+import TaskDetailsPage from "../pages/Tasks/TaskDetailsPage";
 // import EditTaskPage from "../pages/Tasks/EditTaskPage";
 import ProfilePage from "../pages/Profile/ProfilePage";
 import EditProfilePage from "../pages/Profile/EditProfilePage";
@@ -29,7 +29,7 @@ export const routes = createBrowserRouter([
       { index: true, element: <TaskListPage /> },
       { path: "profile", element: <ProfilePage /> },
       { path: "profile/edit", element: <EditProfilePage /> },
-      // { path: "task/:id", element: <TaskDetailsPage /> },
+      { path: "task/:id", element: <TaskDetailsPage /> },
       // { path: "task/:id/edit", element: <EditTaskPage /> },
     ],
   },
